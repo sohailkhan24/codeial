@@ -1,3 +1,7 @@
-body{
-    margin: 0px;
-}
+body {
+  margin: 0px; }
+  body #layout-main {
+    height: 550px; }
+  body #footer-layout {
+    display: flex;
+    flex-direction: row; }

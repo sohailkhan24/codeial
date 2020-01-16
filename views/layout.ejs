@@ -6,16 +6,33 @@
          <%= title %>
     </title>
    <link rel="stylesheet" href="/css/layout.css">
+   <link rel="stylesheet" href="/css/header.css">
+   <link rel="stylesheet" href="/css/footer.css">
    <%- style %>
     
 </head>
 <body>
     <%- include('_header'); %>
-
-    <%- body %>
-
+   
+   <main id="layout-main">
+      
+        <%- body %>
+    
+      
+   </main>
+<div id ="footer-layout">
     <%- include('_footer'); %>
+</div>
+
+
+
+<div class="footer-flex">
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    
+    </div>
     
     <%- script %>
+
 </body>
 </html>
