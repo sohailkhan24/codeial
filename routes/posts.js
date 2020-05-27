@@ -6,6 +6,6 @@ const passport = require('passport');
 const postsController = require('../controllers/posts_controller');
 //another level of security as passport.checkAuthentication as before on can fidle with posts
 router.post('/create',passport.checkAuthentication, postsController.create);
-
+router.get('/destroy/:id',passport.checkAuthentication,postsController.destroy)
 
 module.exports = router;
